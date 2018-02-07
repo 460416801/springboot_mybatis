@@ -1,0 +1,33 @@
+
+spring:
+  datasource:
+  # mysql数据库
+     url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=UTF-8&amp;useSSL=falses
+     username: root
+     password: root
+     driver-class-name: com.mysql.jdbc.Driver
+  # 时间格式
+  jackson:
+      time-zone: GMT+8
+
+
+
+# 规定返回的时间格式
+springjackson:
+  date-format: yyyy-MM-dd HH:mm:ss
+
+
+
+server:
+  # 设置端口
+  port: 8080
+
+
+
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
+
+
+
+
+
